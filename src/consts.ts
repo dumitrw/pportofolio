@@ -2,7 +2,7 @@ import type { Site, Page, Links, Socials } from "@types"
 
 // Global
 export const SITE: Site = {
-  TITLE: "dumitrw.ro",
+  TITLE: "dumitrw",
   DESCRIPTION: "Acesta este portofoliul meu persoal.",
   AUTHOR: "Dumitru Chirinciuc",
 }
