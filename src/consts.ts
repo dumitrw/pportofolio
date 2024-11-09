@@ -21,8 +21,8 @@ export const BLOG: Page = {
 
 // Projects Page 
 export const PROJECTS: Page = {
-  TITLE: "Projects",
-  DESCRIPTION: "Recent projects I have worked on.",
+  TITLE: "Proiecte",
+  DESCRIPTION: "Proiecte recente la care am lucrat.",
 }
 
 // Search Page
@@ -47,7 +47,7 @@ export const LINKS: Links = [
   },
   { 
     TEXT: "Proiecte", 
-    HREF: "/proiecte", 
+    HREF: "/projects", 
   },
 ]
 
