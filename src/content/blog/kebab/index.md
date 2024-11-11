@@ -29,6 +29,6 @@ tags:
 <p>si cu un catel de usturoi pisat</p>
 <p>cat o palma de carne de pui prajita la tigaie gril, - presarata cu sare si piper</p>
 <h2><p><b><i>Retete recomandate</i></h2></p></b>
-<iframe max-width="100%" width="680" height="383" src="https://www.youtube.com/embed/cT7QO5h21yY" title="CLAPON CU CASTANE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe max-width:100% width="680" height="383" src="https://www.youtube.com/embed/cT7QO5h21yY" title="CLAPON CU CASTANE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 <p><i> Acest blog a fost postat pentru a testa functiile paginei.</i> &lt;3 </p>
