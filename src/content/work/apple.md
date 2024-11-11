@@ -6,5 +6,5 @@ dateEnd: "11/11/2024"
 ---
 
 <body> <i><p>Astazi am pus pentru prima data o poza pe site :P</p></i>
-<img src=/src/content/work/golden.jpeg> </img>
+<img src=/golden.jpeg> </img>
  </body>
