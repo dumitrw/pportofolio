@@ -56,7 +56,7 @@ export default function Projects({ data, tags }: Props) {
       <div class="col-span-3 sm:col-span-2">
         <div class="flex flex-col">
           <div class="text-sm uppercase mb-2">
-            SHOWING {projects().length} OF {data.length} PROJECTS
+            SE AFISEAZA {projects().length} DIN {data.length} PROIECTE
           </div>
           <ul class="flex flex-col gap-3">
             {projects().map((project) => (

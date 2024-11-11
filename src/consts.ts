@@ -9,25 +9,25 @@ export const SITE: Site = {
 
 // Work Page
 export const WORK: Page = {
-  TITLE: "Work",
-  DESCRIPTION: "Places I have worked.",
+  TITLE: "Portofoliu",
+  DESCRIPTION: "Proiecte realizate de mine.",
 }
 
 // Blog Page
 export const BLOG: Page = {
   TITLE: "Blog",
-  DESCRIPTION: "Writing on topics I am passionate about.",
+  DESCRIPTION: "Chestii random, poate si utile.",
 }
 
 // Projects Page 
 export const PROJECTS: Page = {
-  TITLE: "Proiecte",
+  TITLE: "Link-uri",
   DESCRIPTION: "Proiecte recente la care am lucrat.",
 }
 
 // Search Page
 export const SEARCH: Page = {
-  TITLE: "Search",
+  TITLE: "Cauta",
   DESCRIPTION: "Search all posts and projects by keyword.",
 }
 
@@ -38,16 +38,16 @@ export const LINKS: Links = [
     HREF: "/", 
   },
   { 
-    TEXT: "Work", 
+    TEXT: "Portofoliu", 
     HREF: "/work", 
+  },
+  { 
+    TEXT: "Link-uri", 
+    HREF: "/linkuri", 
   },
   { 
     TEXT: "Blog", 
     HREF: "/blog", 
-  },
-  { 
-    TEXT: "Proiecte", 
-    HREF: "/projects", 
   },
 ]
 
@@ -65,11 +65,6 @@ export const SOCIALS: Socials = [
     TEXT: "markhorn-dev",
     HREF: "https://github.com/dumitrw"
   },
-  { 
-    NAME: "Twitter",
-    ICON: "twitter-x",
-    TEXT: "dumitrw1",
-    HREF: "https://twitter.com/dumitrw1",
-  },
+
 ]
 

@@ -1,0 +1,71 @@
+---
+title: "Informatii site"
+date: "11/11/2024"
+---
+
+Acest site este o tema preluata de pe <a href="https://astro.build/">astro.build</a>, creata de <a href="https://github.com/markhorn-dev">Mark Horn</a>.
+
+#### Surse
+Tema site: https://astro.build/themes/details/astrosphere/
+
+
+import StackCard from "@components/StackCard.astro"
+
+export const stack = [
+   { 
+    text: "Astro", 
+    icon: "astro", 
+    href: "https://astro.build" 
+  },
+    /*{ 
+    text: "Visual Studio", 
+    icon: "visualsc",
+    href: "https://code.visualstudio.com/" 
+  },*/
+  { 
+    text: "Javascript", 
+    icon: "javascript", 
+    href: "https://www.javascript.com" 
+  },
+  { 
+    text: "Typescript", 
+    icon: "typescript", 
+    href: "https://www.typescriptlang.org" 
+  },
+  { 
+    text: "Tailwind", 
+    icon: "tailwind", 
+    href: "https://tailwindcss.com" 
+  },
+
+  { 
+    text: "Multa iubire <3", 
+    icon: "tinima", 
+    href: "" 
+  },
+  // Adaugă alte elemente ale stack-ului aici
+];
+
+
+
+
+
+
+---
+
+<section class="animate">
+    <div class="space-y-4">
+      <p class="font-semibold text-black dark:text-white">
+       #### Website construit cu:
+      </p>
+      <div class="flex flex-wrap items-center gap-2 mt-5">
+        {stack.map(item => (
+          <StackCard 
+            text={item.text}
+            icon={item.icon}
+            href={item.href}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
