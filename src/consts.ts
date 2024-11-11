@@ -43,7 +43,7 @@ export const LINKS: Links = [
   },
   { 
     TEXT: "Link-uri", 
-    HREF: "/linkuri", 
+    HREF: "/projects", 
   },
   { 
     TEXT: "Blog", 
