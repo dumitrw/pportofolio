@@ -31,7 +31,7 @@ tags:
 <h2><p><b><i>Retete recomandate</i></h2></p></b>
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/ID_VIDEO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/cT7QO5h21yY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </body>
 <p><i> Acest blog a fost postat pentru a testa functiile paginei.</i> &lt;3 </p>
