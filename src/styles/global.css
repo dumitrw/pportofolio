@@ -20,6 +20,8 @@
   }
 }
 
+
+/* Iframe embed yt */
 .video-container {
     position: relative;
     width: 100%;
@@ -164,4 +166,32 @@ article img {
 
 #meteors .shower.ul {
   @apply rotate-315;
+}
+
+/* Galerie de wallpapere */
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+  gap: 10px;
+  max-width: 100%;
+  margin: 10px auto;
+  padding-bottom: 30%;/* Spatiu intre ultima linie de cod si butonul de next*/
+}
+
+.poza {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.poza img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  border-radius: 8px;
+}
+
+.poza:hover img {
+  transform: scale(1.2);
 }
