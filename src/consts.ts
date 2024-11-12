@@ -33,14 +33,16 @@ export const SEARCH: Page = {
 
 // Links
 export const LINKS: Links = [
+ { 
+    TEXT: "Portofoliu", 
+    HREF: "/work", 
+  },
+  
   { 
     TEXT: "Acasa", 
     HREF: "/", 
   },
-  { 
-    TEXT: "Portofoliu", 
-    HREF: "/work", 
-  },
+  
  /* { 
     TEXT: "Link-uri", 
     HREF: "/projects", 
