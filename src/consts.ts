@@ -19,9 +19,9 @@ export const BLOG: Page = {
   DESCRIPTION: "Chestii random, poate si utile.",
 }
 
-// Projects Page 
-export const PROJECTS: Page = {
-  TITLE: "Link-uri",
+// projects Page 
+export const projects: Page = {
+  TITLE: "Proiecte",
   DESCRIPTION: "Proiecte recente la care am lucrat.",
 }
 
@@ -32,21 +32,27 @@ export const SEARCH: Page = {
 }
 
 // Links
+
+
 export const LINKS: Links = [
+
+  { 
+    TEXT: "Acasa", 
+    HREF: "/", 
+  },
+  /*
  { 
     TEXT: "Portofoliu", 
     HREF: "/work", 
   },
   
-  { 
-    TEXT: "Acasa", 
-    HREF: "/", 
-  },
+
   
- /* { 
-    TEXT: "Link-uri", 
+  */
+  { 
+    TEXT: "Proiecte", 
     HREF: "/projects", 
-  },*/
+  },
   { 
     TEXT: "Blog", 
     HREF: "/blog", 

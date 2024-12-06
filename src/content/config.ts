@@ -1,4 +1,11 @@
 import { defineCollection, z } from "astro:content"
+import { defineConfig } from 'astro/config';
+
+export default defineConfig({
+  image: {
+    domains: ['drive.google.com'],
+  },
+});
 
 const work = defineCollection({
   type: "content",

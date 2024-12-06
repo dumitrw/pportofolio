@@ -3,8 +3,8 @@ import { type CollectionEntry, getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
-import ArticleTopLayout from "@layouts/ArticleTopLayout.astro"
-import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro"
+import ArticleTopLayout from "@layouts/ArticleTopLayoutP.astro"
+import ArticleBottomLayout from "@layouts/ArticleBottomLayoutP.astro"
 
 // Create the static projects pages
 export async function getStaticPaths() {
@@ -19,6 +19,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"projects">
 const project = Astro.props
 const { title, summary } = project.data
+
 ---
 
 <PageLayout title={title} description={summary}>

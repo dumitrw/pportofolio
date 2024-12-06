@@ -18,24 +18,24 @@ tags:
   <h1>Galerie</h1>
   <div class="galerie">
     <div class="poza">
-    <img src="/wallpaper/dumitrw.ro-vacute.jpeg" alt="``fa niste vacuse si niste oi pe un camp``"></div>
+    <img src="https://i.imgur.com/vhfaeC4.jpeg" alt="``fa niste vacuse si niste oi pe un camp``"></div>
     <div class="poza" >
-    <img src="/wallpaper/dumitrw.ro-sanrio.jpg" alt="Helo chiti">
+    <img src="https://i.imgur.com/vDRigrD.jpeg" alt="Helo chiti">
     </div>
     <div class="poza">
-    <img src="/wallpaper/dumitrw.ro-padure_verde.jpg" alt="rip pc"></div>
+    <img src="https://i.imgur.com/vZ8OxYw.jpeg" alt="rip pc"></div>
      <div class="poza">
-     <img src="/wallpaper/dumitrw.ro-mercedes.png" alt="-"></div>
+     <img src="https://i.imgur.com/10cSzGb.jpg" alt="-"></div>
      <div class="poza">
-     <img src="/wallpaper/dumitrw.ro-fantana.jpg" alt="Tutorial fantana"></div> 
+     <img src="https://i.imgur.com/KEznOHK.jpeg" alt="Tutorial fantana"></div> 
      <div class="poza">
-     <img src="/wallpaper/dumitrw.ro-pokeball.jpg" alt="Wallpaper 3"></div>
+     <img src="https://i.imgur.com/c9hCEG8.jpeg" alt="Wallpaper 3"></div>
      <div class="poza">
-     <img src="/wallpaper/dumitrw.ro-pokeball_2monitoare.jpg" alt="Wallpaper 3"></div>
+     <img src="https://i.imgur.com/38JnBmX.jpeg" alt="Wallpaper 3"></div>
      <div class="poza">
-     <img src="/wallpaper/dumitrw.ro-red_room.jpg" alt="Primul meu proiect in blender."></div>
+     <img src="https://i.imgur.com/cwgcgIb.jpeg" alt="Primul meu proiect in blender."></div>
      <div class="poza">
-     <img src="/wallpaper/dumitrw.ro-trip.jpg" alt="Trippy"></div>
+     <img src="https://i.imgur.com/A6VqNqR.jpeg" alt="Trippy"></div>
     <!--       Adaugă mai multe imagini aici
      <div class="poza"><img src="/wallpaper/dumitrw.ro-.jpg" alt="Wallpaper 3"></div>
     -->
