@@ -19,8 +19,8 @@ tags:
 
 ---
 
-<h2>Spalatorie auto</h2>
-<p>Aceasta este o schita 3D realizata pentru o saplatorie auto.</p>
+<h2>Spălătorie auto</h2>
+<p>Aceasta este o schiță 3D realizată pentru o spălătorie auto.</p>
 <p> 
 <div class="poza">
     <img src="https://i.imgur.com/DB3z19W.jpeg" alt="Spalatorie"></div></p>
@@ -45,7 +45,7 @@ tags:
 ---
 
 <h2>KMZ - CHIMICALE &#40;Audio explicit&#41;</h2>
-<p>Acesta a fost primul meu visualizer realizat in blender, care surprinzator a iesit mai bine decat ma asteptam, eu neavand experienta in facut animatii.</p>
+<p>Acesta a fost primul meu visualizer realizat in blender, care surprinzător a iesit mai bine decat mă așteptam, eu neavând experiență in făcut animații.</p>
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/6_wwCBVQAG8?si=YbH3HdX_hdtzUTVf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
