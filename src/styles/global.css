@@ -20,7 +20,12 @@
   }
 }
 
-
+body {
+  cursor: url('/Kitty.cur'), auto;
+}
+a {
+  cursor: url('/Kitty.cur'), auto;
+}
 /* Iframe embed yt */
 .video-container {
     position: relative;
