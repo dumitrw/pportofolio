@@ -214,14 +214,14 @@ article img {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeOut 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  animation-delay: 1s;
+  animation: fadeOut 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation-delay: 0.5s;
 }
 
 #logo {
   width: 100px; /* Ajustează dimensiunea după preferințe */
   opacity: 0;
-  animation: blink 2s ease-in-out 2;
+  animation: blink 4s ease-in-out 2;
   animation-delay: 1s;
 }
 
