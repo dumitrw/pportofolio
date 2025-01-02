@@ -14,31 +14,11 @@ import { SITE } from "@consts"
     <BaseHead title={`${title} | ${SITE.TITLE}`} description={description} />
   </head>
   <body>
-    <!-- Verificăm dacă animația a avut loc deja -->
-    {sessionStorage.getItem("overlayCompleted") !== "true" ? (
-      <div id="overlay">
-        <img id="logo" src="/logo2.png" alt="Logo" />
-      </div>
-    ) : null}
-
     <Header />
     <Drawer />
     <main>
       <slot />
     </main>
     <Footer />
-    
-    <!-- Script pentru a elimina overlay-ul după animație -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const overlay = document.getElementById("overlay");
-        if (overlay) {
-          overlay.addEventListener("animationend", () => {
-            overlay.remove(); // Elimină complet overlay-ul din DOM
-            sessionStorage.setItem("overlayCompleted", "true"); // Stochează că animația a avut loc
-          });
-        }
-      });
-    </script>
   </body>
 </html>
