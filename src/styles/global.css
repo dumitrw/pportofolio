@@ -215,13 +215,13 @@ article img {
   justify-content: center;
   align-items: center;
   animation: fadeOut 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0s;
 }
 
 #logo {
   width: 100px; /* Ajustează dimensiunea după preferințe */
   opacity: 0;
-  animation: blink 4s ease-in-out 2;
+  animation: blink 1.5s ease-in-out 2;
   animation-delay: 1s;
 }
 
