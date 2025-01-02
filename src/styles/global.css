@@ -20,6 +20,8 @@
   }
 }
 
+
+
 body {
   cursor: url('/Kitty.cur'), auto;
 }
@@ -199,4 +201,36 @@ article img {
 
 .poza:hover img {
   transform: scale(1.2);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation-delay: 1s;
+}
+
+#logo {
+  width: 100px; /* Ajustează dimensiunea după preferințe */
+  opacity: 0;
+  animation: blink 2s ease-in-out 2;
+  animation-delay: 1s;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
