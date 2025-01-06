@@ -1,4 +1,4 @@
-if (typeof window !== "undefined") {
+/*if (typeof window !== "undefined") {
     document.addEventListener("DOMContentLoaded", function() {
       const transitionElement = document.getElementById("transition-screen");
   
@@ -12,5 +12,5 @@ if (typeof window !== "undefined") {
         transitionElement.classList.add("hidden");
       }
     });
-  }
+  } 
   
