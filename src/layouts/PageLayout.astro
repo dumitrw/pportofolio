@@ -6,7 +6,8 @@ import Footer from "@components/Footer.astro"
 import Drawer from "@components/Drawer.astro"
 const { title, description } = Astro.props
 import { SITE } from "@consts"
-const isHomePage = Astro.request.url.pathname === "/";
+const isHomePage = new URL(Astro.request.url).pathname === "/";
+
 ---
 
 <!doctype html>

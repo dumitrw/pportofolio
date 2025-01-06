@@ -1,22 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const transitionElement = document.getElementById("transition-screen");
+window.addEventListener("load", function () {
+  console.log("Page Loaded");
 
-  // Verificăm dacă suntem pe pagina principală și dacă tranzitia nu a fost deja arătată
-  if (window.location.pathname === "/" && !sessionStorage.getItem("hasVisited")) {
-    // Setăm că am vizitat pagina principală
-    sessionStorage.setItem("hasVisited", "true");
-
-    // Așteptăm 4 secunde înainte de a începe tranziția (pentru a da timp efectului de fade-in)
-    setTimeout(() => {
-      transitionElement.classList.add("fade-out"); // Aplicăm clasa care va începe tranziția
-
-      // Ascundem tranzitia după 3 secunde (timpul tranzitiei, ajustabil)
-      setTimeout(() => {
-        transitionElement.classList.add("hidden"); // Ascundem elementul
-      }, 3000); // Acest timp ar trebui să corespundă cu durata tranziției
-    }, 4000); // Așteptăm 4 secunde înainte de a începe fade-out
+  // Verificăm dacă tranziția a fost deja realizată în sesiune
+  if (!sessionStorage.getItem('transitionDone')) {
+    // Dacă nu a fost realizată, pornim tranziția
+    startTransition();
   } else {
-    // Dacă nu suntem pe pagina principală, ascundem tranzitia imediat
-    transitionElement.classList.add("hidden");
+    console.log("Transition already completed, skipping.");
+    // Ascundem imediat ecranul de tranziție dacă a fost deja completat
+    document.getElementById("transition-screen").style.display = "none";
   }
 });
+
+function startTransition() {
+  const transitionScreen = document.getElementById("transition-screen");
+  const logo = document.getElementById("logo");
+
+  // Asigurăm animația logo-ului
+  logo.style.animation = 'fadeIn 1.5s ease-out';
+
+  // După un timp (cât durează animația), ascundem ecranul de tranziție
+  setTimeout(function () {
+    transitionScreen.style.display = "none"; // Ascundem ecranul de tranziție
+    // Setăm în sessionStorage pentru a indica că tranziția s-a realizat
+    sessionStorage.setItem('transitionDone', 'true');
+    console.log("Transition completed.");
+  }, 3000); // Așteptăm 3 secunde (durata animației)
+}
