@@ -22,7 +22,30 @@ import { SITE } from "@consts"
 
       </div>
       
-
+      <!-- Folosim client:only pentru a încărca scriptul doar pe client -->
+      <Fragment client:only>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const transitionElement = document.getElementById("transition-screen");
+        
+            // Verificăm dacă tranzitia a fost deja afișată în sesiunea curentă
+            if (!sessionStorage.getItem("hasVisited")) {
+              // Dacă nu a fost vizitat, salvăm în sessionStorage și arătăm tranzitia
+              sessionStorage.setItem("hasVisited", "true");
+        
+              // Așteptăm 4 secunde înainte de a începe tranziția
+              setTimeout(() => {
+                transitionElement.classList.add("fade-out"); // Aplicăm clasa care va începe tranziția
+              }, 4000); // Așteptăm 4 secunde pentru opacitate completă
+            } else {
+              // Dacă a fost vizitat deja, ascundem tranzitia imediat
+              transitionElement.classList.add("hidden");
+            }
+          });
+        </script>
+        
+        
+      </Fragment>
 
       <slot />
     </main>
