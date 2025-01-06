@@ -208,7 +208,6 @@ article img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -231,14 +230,16 @@ article img {
 .transition .logo {
   width: 150px; /* Ajustează dimensiunea logo-ului */
   height: auto; /* Mărește automat în funcție de lățime */
+  background: transparent; /* Asigură că logo-ul nu are fundal implicit */
+  border: none; /* Asigură că logo-ul nu are bordură */
 }
+
 #transition-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,3 +259,32 @@ article img {
     opacity: 1;
   }
 }
+
+html.dark #logo {
+  animation: fadeInDark 1.5s forwards;
+  background: transparent; /* Asigură transparență pentru tema dark */
+}
+
+html:not(.dark) #logo {
+  animation: fadeInLight 1.5s forwards;
+  background: transparent; /* Asigură transparență pentru tema light */
+}
+
+@keyframes fadeInDark {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
