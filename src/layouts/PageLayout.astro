@@ -20,48 +20,7 @@ import { SITE } from "@consts"
       <div id="transition-screen" class="transition">
         <img id="logo" src="https://i.imgur.com/JaJA3rv.png" alt="Logo" class="logo"/>
       </div>
-
-      <Fragment client:only>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            // Verificăm dacă suntem pe pagina principală
-            const currentPath = window.location.pathname;
-      
-            // Dacă suntem pe index (pagina principală)
-            if (currentPath === "/" || currentPath === "/index") {
-              // Verificăm dacă tranzitia a fost deja afișată în această sesiune
-              const transitionElement = document.getElementById("transition-screen");
-      
-              if (transitionElement) {
-                if (!sessionStorage.getItem("hasVisited")) {
-                  sessionStorage.setItem("hasVisited", "true");
-      
-                  // Așteptăm 4 secunde pentru a arăta tranzitia
-                  setTimeout(() => {
-                    transitionElement.classList.add("fade-out");
-      
-                    // După 1.5 secunde, ascundem tranzitia
-                    setTimeout(() => {
-                      transitionElement.classList.add("hidden");
-                    }, 4000);
-                  }, 4000);
-                } else {
-                  transitionElement.classList.add("hidden");
-                }
-              }
-            } else {
-              // Dacă nu suntem pe index, ascundem tranzitia
-              const transitionElement = document.getElementById("transition-screen");
-              if (transitionElement) {
-                transitionElement.classList.add("hidden");
-              }
-            }
-          });
-        </script>
-      </Fragment>
-      
-
-
+      <script src="../js/transition.js"></script>
 
       <slot />
     </main>
