@@ -10,6 +10,25 @@ window.addEventListener("load", function () {
     // Ascundem imediat ecranul de tranziție dacă a fost deja completat
     document.getElementById("transition-screen").style.display = "none";
   }
+
+  // Schimbarea temei la apăsarea butonului
+  const themeButton = document.getElementById('theme-toggle');
+  themeButton?.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    // Salvează tema activă în localStorage pentru a persista între sesiunile de navigare
+    if (document.documentElement.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+  // La încărcarea paginii, verificăm tema salvată și o aplicăm
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
 });
 
 function startTransition() {
@@ -17,7 +36,7 @@ function startTransition() {
   const logo = document.getElementById("logo");
 
   // Asigurăm animația logo-ului
-  logo.style.animation = 'fadeIn 1.5s ease-out';
+  logo.style.animation = 'fadeIn 2s ease-out';
 
   // După un timp (cât durează animația), ascundem ecranul de tranziție
   setTimeout(function () {
@@ -25,5 +44,5 @@ function startTransition() {
     // Setăm în sessionStorage pentru a indica că tranziția s-a realizat
     sessionStorage.setItem('transitionDone', 'true');
     console.log("Transition completed.");
-  }, 3000); // Așteptăm 3 secunde (durata animației)
+  }, 2000); // Așteptăm 3 secunde (durata animației)
 }
