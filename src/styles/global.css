@@ -202,35 +202,33 @@ article img {
 .poza:hover img {
   transform: scale(1.2);
 }
-
-#overlay {
+.transition {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
-  z-index: 9999;
+  background: #000;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeOut 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  animation-delay: 0s;
+  z-index: 9999;
+  opacity: 1; /* Inițial 100% opac */
+  transition: opacity 4s ease-out; /* Tranșitează opacitatea în 2 secunde */
 }
 
-#logo {
-  width: 100px; /* Ajustează dimensiunea după preferințe */
+.transition.fade-out {
+  opacity: 0; /* Scade opacitatea la 0 pentru transparență */
+  pointer-events: none; /* Nu mai permite interacțiunea cu elementul */
+}
+
+.transition.hidden {
   opacity: 0;
-  animation: blink 1.5s ease-in-out 2;
-  animation-delay: 1s;
+  pointer-events: none; /* Previne interacțiunea cu elementul după ce dispare */
 }
 
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
+.transition .logo {
+  width: 150px; /* Ajustează dimensiunea logo-ului */
+  height: auto; /* Mărește automat în funcție de lățime */
 }

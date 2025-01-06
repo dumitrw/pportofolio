@@ -17,6 +17,33 @@ import { SITE } from "@consts"
     <Header />
     <Drawer />
     <main>
+      <div id="transition-screen" class="transition">
+        <img src="/public/logo2.png" alt="Logo" class="logo" />
+      </div>
+      
+      <!-- Folosim client:only pentru a încărca scriptul doar pe client -->
+      <Fragment client:only>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const transitionElement = document.getElementById("transition-screen");
+
+            // Verificăm dacă tranzitia a fost deja afișată în această sesiune (folosind localStorage pentru persistenta mai lungă)
+            if (!localStorage.getItem("hasVisited")) {
+              // Dacă nu a fost vizitat, salvăm în localStorage și arătăm tranzitia
+              localStorage.setItem("hasVisited", "true");
+
+              // Așteptăm 1 secundă înainte de a începe tranziția
+              setTimeout(() => {
+                transitionElement.classList.add("fade-out"); // Aplicăm clasa care va începe tranziția
+              }, 4000); // Așteptăm 1 secundă pentru opacitate completă
+            } else {
+              // Dacă a fost vizitat deja, ascundem tranzitia imediat
+              transitionElement.classList.add("hidden");
+            }
+          });
+        </script>
+      </Fragment>
+
       <slot />
     </main>
     <Footer />
