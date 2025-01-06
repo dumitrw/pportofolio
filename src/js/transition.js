@@ -1,30 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
   const transitionElement = document.getElementById("transition-screen");
 
-  // Verificăm calea curentă și aplicăm tranzitia doar pe pagina principală
-  const isHomePage = window.location.pathname === "/" || window.location.pathname === "/index.html";
+  // Verificăm dacă suntem pe pagina principală și dacă tranzitia nu a fost deja arătată
+  if (window.location.pathname === "/" && !sessionStorage.getItem("hasVisited")) {
+    // Setăm că am vizitat pagina principală
+    sessionStorage.setItem("hasVisited", "true");
 
-  console.log("Current Path: ", window.location.pathname);
-  console.log("Este pagina principală? ", isHomePage);
+    // Așteptăm 4 secunde înainte de a începe tranziția (pentru a da timp efectului de fade-in)
+    setTimeout(() => {
+      transitionElement.classList.add("fade-out"); // Aplicăm clasa care va începe tranziția
 
-  if (isHomePage) {
-    console.log("Se aplică tranzitia pe pagina principală.");
-    if (!sessionStorage.getItem("hasVisited")) {
-      sessionStorage.setItem("hasVisited", "true");
-
+      // Ascundem tranzitia după 3 secunde (timpul tranzitiei, ajustabil)
       setTimeout(() => {
-        transitionElement.classList.add("fade-out");
-
-        setTimeout(() => {
-          transitionElement.classList.add("hidden");
-        }, 3000); // 3 secunde pentru fade-out
-      }, 4000); // 4 secunde de pauză înainte de tranzitie
-    } else {
-      console.log("Pagina a fost deja vizitată în această sesiune. Ascund tranzitia.");
-      transitionElement.classList.add("hidden");
-    }
+        transitionElement.classList.add("hidden"); // Ascundem elementul
+      }, 3000); // Acest timp ar trebui să corespundă cu durata tranziției
+    }, 4000); // Așteptăm 4 secunde înainte de a începe fade-out
   } else {
-    console.log("Nu suntem pe pagina principală. Ascund tranzitia imediat.");
+    // Dacă nu suntem pe pagina principală, ascundem tranzitia imediat
     transitionElement.classList.add("hidden");
   }
 });
