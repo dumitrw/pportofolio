@@ -21,38 +21,35 @@ import { SITE } from "@consts"
         <img id="logo" src="https://i.imgur.com/JaJA3rv.png" alt="Logo" class="logo"/>
       </div>
 
-      <!-- Folosim client:only pentru a încărca scriptul doar pe client -->
-      <Fragment client:only>
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            console.log("Documentul este gata!");
-            const transitionElement = document.getElementById("transition-screen");
+<!-- Folosim client:only pentru a încărca scriptul doar pe client -->
+<Fragment client:only>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const transitionElement = document.getElementById("transition-screen");
 
-            // Verificăm dacă tranzitia a fost deja afișată în această sesiune (folosind sessionStorage)
-            if (transitionElement) {
-              if (!sessionStorage.getItem("hasVisited")) {
-                console.log("Prima vizitare, tranzitia va apărea.");
-                sessionStorage.setItem("hasVisited", "true");
+      // Verificăm dacă tranzitia a fost deja afișată în această sesiune
+      if (transitionElement && !localStorage.getItem("hasVisited")) {
+        // Dacă nu a fost vizitat, salvăm în localStorage și arătăm tranzitia
+        localStorage.setItem("hasVisited", "true");
 
-                // Așteptăm 4 secunde înainte de a începe tranziția
-                setTimeout(() => {
-                  transitionElement.classList.add("fade-out");
+        // Așteptăm 4 secunde înainte de a începe tranziția
+        setTimeout(() => {
+          transitionElement.classList.add("fade-out"); // Aplicăm clasa care va începe tranziția
 
-                  // Ascundem tranzitia după 1.5 secunde (durata tranzitiei)
-                  setTimeout(() => {
-                    transitionElement.classList.add("hidden");
-                  }, 3000);
-                }, 4000);
-              } else {
-                console.log("Sesiunea a fost deja vizitată, tranzitia nu va apărea.");
-                transitionElement.classList.add("hidden");
-              }
-            } else {
-              console.error("Elementul cu ID-ul 'transition-screen' nu a fost găsit.");
-            }
-          });
-        </script>
-      </Fragment>
+          // Ascundem tranzitia după 1.5 secunde
+          setTimeout(() => {
+            transitionElement.classList.add("hidden"); // Ascundem elementul
+          }, 1500); // Ajustează durata aici
+        }, 4000); // Ajustează durata întârzierii
+      } else if (transitionElement) {
+        // Dacă a fost vizitat deja, ascundem tranzitia imediat
+        transitionElement.classList.add("hidden");
+      }
+    });
+  </script>
+</Fragment>
+
+
 
       <slot />
     </main>
