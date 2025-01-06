@@ -24,30 +24,51 @@ import { SITE } from "@consts"
 <!-- Folosim client:only pentru a încărca scriptul doar pe client -->
 <Fragment client:only>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
+      // Verificăm dacă tranzitia a fost deja afișată în această sesiune
+      if (!localStorage.getItem("hasVisited")) {
+        const transitionElement = document.getElementById("transition-screen");
+
+        if (transitionElement) {
+          localStorage.setItem("hasVisited", "true");
+
+          // Așteptăm 4 secunde înainte de a începe tranziția
+          setTimeout(() => {
+            transitionElement.classList.add("fade-out"); // Aplicăm clasa care va începe tranziția
+
+            // Ascundem tranzitia după 1.5 secunde
+            setTimeout(() => {
+              transitionElement.classList.add("hidden"); // Ascundem elementul
+            }, 1500); // Ajustează durata aici
+          }, 4000); // Ajustează durata întârzierii
+        }
+      } else {
+        const transitionElement = document.getElementById("transition-screen");
+        if (transitionElement) {
+          transitionElement.classList.add("hidden");
+        }
+      }
+    });
+
+    // Ascultăm schimbările de istoric pentru navigare client-side
+    window.addEventListener('popstate', function (e) {
       const transitionElement = document.getElementById("transition-screen");
 
-      // Verificăm dacă tranzitia a fost deja afișată în această sesiune
       if (transitionElement && !localStorage.getItem("hasVisited")) {
-        // Dacă nu a fost vizitat, salvăm în localStorage și arătăm tranzitia
         localStorage.setItem("hasVisited", "true");
 
-        // Așteptăm 4 secunde înainte de a începe tranziția
+        // Așteptăm înainte de a aplica tranziția
         setTimeout(() => {
-          transitionElement.classList.add("fade-out"); // Aplicăm clasa care va începe tranziția
-
-          // Ascundem tranzitia după 1.5 secunde
+          transitionElement.classList.add("fade-out");
           setTimeout(() => {
-            transitionElement.classList.add("hidden"); // Ascundem elementul
-          }, 1500); // Ajustează durata aici
-        }, 4000); // Ajustează durata întârzierii
-      } else if (transitionElement) {
-        // Dacă a fost vizitat deja, ascundem tranzitia imediat
-        transitionElement.classList.add("hidden");
+            transitionElement.classList.add("hidden");
+          }, 1500);
+        }, 4000);
       }
     });
   </script>
 </Fragment>
+
 
 
 
