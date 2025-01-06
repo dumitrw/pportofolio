@@ -245,7 +245,8 @@ article img {
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  transition: background-color 2s ease-out; /* Tranșitează doar fundalul pe schimbarea temei */
+  background-color: transparent; /* Lăsăm fundalul transparent pentru început */
+  transition: opacity 2s ease-out, background-color 2s ease-out; /* Tranșitează fundalul și opacitatea */
 }
 
 #logo {
@@ -296,4 +297,5 @@ html:not(.dark) #logo {
     opacity: 1;
   }
 }
+
 
