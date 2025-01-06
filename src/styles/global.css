@@ -214,7 +214,7 @@ article img {
   align-items: center;
   z-index: 9999;
   opacity: 1; /* Inițial 100% opac */
-  transition: opacity 2s ease-out; /* Tranșitează opacitatea în 2 secunde */
+  transition: opacity 2s ease-out, background-color 2s ease-out; /* Tranșitează opacitatea și fundalul */
 }
 
 .transition.fade-out {
@@ -232,6 +232,7 @@ article img {
   height: auto; /* Mărește automat în funcție de lățime */
   background: transparent; /* Asigură că logo-ul nu are fundal implicit */
   border: none; /* Asigură că logo-ul nu are bordură */
+  animation: fadeIn 1.5s forwards; /* Aplică animația de transparență */
 }
 
 #transition-screen {
@@ -244,20 +245,19 @@ article img {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  transition: background-color 2s ease-out; /* Tranșitează doar fundalul pe schimbarea temei */
 }
 
 #logo {
   opacity: 0;
-  animation: fadeIn 1.5s forwards;  /* Adăugați animația */
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+html.dark #transition-screen {
+  background-color: rgba(0, 0, 0, 0.9); /* Fundal întunecat pentru tema dark */
+}
+
+html:not(.dark) #transition-screen {
+  background-color: rgba(255, 255, 255, 0.9); /* Fundal mai deschis pentru tema light */
 }
 
 html.dark #logo {
@@ -268,6 +268,15 @@ html.dark #logo {
 html:not(.dark) #logo {
   animation: fadeInLight 1.5s forwards;
   background: transparent; /* Asigură transparență pentru tema light */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInDark {
