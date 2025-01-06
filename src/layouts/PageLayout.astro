@@ -18,8 +18,7 @@ import { SITE } from "@consts"
     <Drawer />
     <main>
       <div id="transition-screen" class="transition">
-        <img id="logo" src="https://i.imgur.com/JaJA3rv.png" alt="Logo" class="logo"/>
-
+        <img src="/public/logo2.png" alt="Logo" class="logo" />
       </div>
       
       <!-- Folosim client:only pentru a încărca scriptul doar pe client -->
@@ -28,22 +27,30 @@ import { SITE } from "@consts"
           document.addEventListener("DOMContentLoaded", function() {
             const transitionElement = document.getElementById("transition-screen");
         
-            // Verificăm dacă tranzitia a fost deja afișată în sesiunea curentă
-            if (!sessionStorage.getItem("hasVisited")) {
-              // Dacă nu a fost vizitat, salvăm în sessionStorage și arătăm tranzitia
-              sessionStorage.setItem("hasVisited", "true");
+            // Verificăm dacă tranzitia a fost deja afișată în această sesiune (folosind localStorage pentru persistenta mai lungă)
+            if (transitionElement) { // Verificăm dacă elementul există
+              if (!localStorage.getItem("hasVisited")) {
+                // Dacă nu a fost vizitat, salvăm în localStorage și arătăm tranzitia
+                localStorage.setItem("hasVisited", "true");
         
-              // Așteptăm 4 secunde înainte de a începe tranziția
-              setTimeout(() => {
-                transitionElement.classList.add("fade-out"); // Aplicăm clasa care va începe tranziția
-              }, 4000); // Așteptăm 4 secunde pentru opacitate completă
+                // Așteptăm 4 secunde înainte de a începe tranziția (pentru a da timp efectului de fade-in)
+                setTimeout(() => {
+                  transitionElement.classList.add("fade-out"); // Aplicăm clasa care va începe tranziția
+        
+                  // Ascundem tranzitia după 1.5 secunde (timpul tranzitiei, ajustabil)
+                  setTimeout(() => {
+                    transitionElement.classList.add("hidden"); // Ascundem elementul
+                  }, 3000); // Acest timp ar trebui să corespundă cu durata tranziției
+                }, 4000); // Așteptăm 4 secunde înainte de a începe fade-out
+              } else {
+                // Dacă a fost vizitat deja, ascundem tranzitia imediat
+                transitionElement.classList.add("hidden");
+              }
             } else {
-              // Dacă a fost vizitat deja, ascundem tranzitia imediat
-              transitionElement.classList.add("hidden");
+              console.error("Elementul cu ID-ul 'transition-screen' nu a fost găsit.");
             }
           });
         </script>
-        
         
       </Fragment>
 
