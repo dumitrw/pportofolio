@@ -36,8 +36,15 @@ tags:
      <img src="https://i.imgur.com/cwgcgIb.jpeg" alt="Primul meu proiect in blender."></div>
      <div class="poza">
      <img src="https://i.imgur.com/A6VqNqR.jpeg" alt="Trippy"></div>
-    <!--       Adaugă mai multe imagini aici
-     <div class="poza"><img src="/wallpaper/dumitrw.ro-.jpg" alt="Wallpaper 3"></div>
+     <div class="poza">
+     <img src="https://i.imgur.com/JPveUUs.jpeg" alt="Doza 1"></div>
+     <div class="poza">
+     <img src="https://i.imgur.com/Nfazr0B.jpeg" alt="Doza 2"></div>
+      <div class="poza">
+     <img src="https://i.imgur.com/CbatoI9.jpeg" alt="Doza 3"></div>
+  <!--       Adaugă mai multe imagini aici
+     <div class="poza">
+     <img src="/wallpaper/dumitrw.ro-.jpg" alt="Wallpaper 3"></div>
     -->
   </div>
 </body>
