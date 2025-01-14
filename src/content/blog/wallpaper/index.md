@@ -25,7 +25,7 @@ tags:
     <div class="poza">
     <img src="https://i.imgur.com/vZ8OxYw.jpeg" alt="rip pc"></div>
      <div class="poza">
-     <img src="https://i.imgur.com/10cSzGb.jpg" alt="-"></div>
+     <img src="https://i.imgur.com/sbSQrbB.jpeg" alt="mercedes"></div>
      <div class="poza">
      <img src="https://i.imgur.com/KEznOHK.jpeg" alt="Tutorial fantana"></div> 
      <div class="poza">
