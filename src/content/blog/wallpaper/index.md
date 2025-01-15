@@ -1,6 +1,6 @@
 ---
-title: "Imagini de fundal"
-summary: "Cateva Wallpapere landscape(16:9) realizate de mine in Blender."
+title: "WALLPAPERS"
+summary: "Cateva imagini de fundal landscape(16:9) realizate de mine in Blender."
 date: "Nov 12 2024"
 draft: false
 tags:
