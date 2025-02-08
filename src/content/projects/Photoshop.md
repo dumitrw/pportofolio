@@ -6,8 +6,8 @@ draft: false
 tags:
 - Photoshop
 ---
-Urmeaza sa se adauge si aici proiecte cat de curand </3
----
+
+
 <h2>SOHO Club & Lounge</h2>
 
 <p> Meniu realizat pentru SOHO Club & Lounge.
