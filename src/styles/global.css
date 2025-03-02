@@ -299,3 +299,18 @@ html:not(.dark) #logo {
 }
 
 
+/* slider */
+.swiper {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #007aff;
+}

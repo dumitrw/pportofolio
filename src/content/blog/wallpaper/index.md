@@ -4,8 +4,8 @@ summary: "Cateva imagini de fundal landscape(16:9) realizate de mine in Blender.
 date: "Nov 12 2024"
 draft: false
 tags:
-- wallpapers
-- blender
+- WALLPAPERS
+- BLENDER
 ---
 <body>
 <p>Acestea sunt imagini de fundal pe care le-am obtinut pe parcursul procesului de a invata cat mai multe tool-uri in Software-ul <b>Blender.</b></p>

@@ -1,0 +1,41 @@
+---
+import 'swiper/swiper-bundle.min.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+---
+<Swiper
+  modules={[Navigation, Pagination, Autoplay]}
+  navigation
+  pagination={{ clickable: true }}
+  autoplay={{ delay: 3000 }}
+  loop={true}
+  spaceBetween={20}
+  slidesPerView={1}
+>
+  <SwiperSlide>
+    <img src="https://i.imgur.com/vhfaeC4.jpeg" alt="Image 1" />
+  </SwiperSlide>
+  <SwiperSlide>
+    <img src="https://i.imgur.com/vDRigrD.jpeg" alt="Image 2" />
+  </SwiperSlide>
+  <SwiperSlide>
+    <img src="https://i.imgur.com/vZ8OxYw.jpeg" alt="Image 3" />
+  </SwiperSlide>
+</Swiper>
+
+<style>
+  .swiper {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #007aff;
+  }
+</style>
