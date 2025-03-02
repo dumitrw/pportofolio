@@ -13,7 +13,6 @@ tags:
 <p> Meniu realizat pentru SOHO Club & Lounge.
 <p><div class="poza"><img src="https://i.imgur.com/dRQH4iD.jpeg" alt="Fata meniu"> </div> </p>
 <p><div class="poza"><img src="https://i.imgur.com/ELpfqXX.jpeg" alt="Meniu"> </div> </p>
-
 ---
 
 <h2>Bitshock eSports</h2>
