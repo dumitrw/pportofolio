@@ -81,12 +81,6 @@ tags:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=fMdChraxrZGh2eZ-&amp;list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <p> <h2>⬇️Aici poti vedea progresul meu pe parcursul tutorialului.⬇️</h2> </p>
 
-<div className="my-8">
-import ImageSlider from "../components/ImageSlider.tsx"
-
-
-  <ImageSlider />
-</div>
 
 
 ---
