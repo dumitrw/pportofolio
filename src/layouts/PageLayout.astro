@@ -7,6 +7,8 @@ import Drawer from "@components/Drawer.astro"
 const { title, description } = Astro.props
 import { SITE } from "@consts"
 const isHomePage = new URL(Astro.request.url).pathname === "/";
+const readTime = data.body ? readingTime(data.body) : "0 min read";
+
 
 ---
 
