@@ -79,7 +79,7 @@ tags:
 <p><b>LINK PLAYLIST: <a href=https://youtube.com/playlist?list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&si=ryEZcKxXWksw7OQ0> Blender 4.0 Beginner Donut Tutorial (NEW) </a>👈</b> </p>
 <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=fMdChraxrZGh2eZ-&amp;list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-<p> <h2>⬇️Aici poti vedea progresul meu pe parcursul tutorialului.⬇️</h2> </p>
+<p> <h2>⬇️Aici poti vedea progresul meu pe parcursul tutorialului..⬇️</h2> </p>
 
 
 
