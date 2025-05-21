@@ -6,6 +6,6 @@ import solidJs from "@astrojs/solid-js"
 import react from '@astrojs/react'
 
 export default defineConfig({
-  site: "https://portofolio.dumitrw.ro",
+  site: "https://portofolio.dumitrw.ro ",
   integrations: [react(), mdx(), sitemap(), solidJs(), tailwind({ applyBaseStyles: false })],
 });
