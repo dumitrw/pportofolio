@@ -23,6 +23,10 @@ tags:
     <img src="https://i.imgur.com/vDRigrD.jpeg" alt="Helo chiti">
     </div>
     <div class="poza">
+    <img src="https://i.imgur.com/HIIDOMx.jpeg" alt="Wallpaper 3"></div>
+     <div class="poza">
+    <img src="https://i.imgur.com/lT6Kmoy.jpeg" alt="Wallpaper 3"></div>
+    <div class="poza">
     <img src="https://i.imgur.com/vZ8OxYw.jpeg" alt="rip pc"></div>
      <div class="poza">
      <img src="https://i.imgur.com/sbSQrbB.jpeg" alt="mercedes"></div>
