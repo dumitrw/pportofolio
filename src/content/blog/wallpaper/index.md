@@ -52,4 +52,4 @@ tags:
     -->
   </div>
 </body>
-<p><i><b>Ultima actualizare a blogului:</b> 14 Ian 2025   19:18 </i></p>
+<p><i><b>Ultima actualizare a blogului:</b> 26 Mai 2025   22:06 </i></p>

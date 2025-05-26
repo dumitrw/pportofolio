@@ -21,7 +21,7 @@ tags:
 <!-- Ce este blender? -->
 
 <p> <h1> &nbsp;&nbsp;&nbsp;<u>Ce este blender? </h1> </u> </p>
-<p> &nbsp; Iti voi explica pe scurt. Pai... este un program open-source gratuit folostit pentru a face modele 3D, jocuri, animatii, arhitectura, CGI pentru filme, simulari si multe alte lucuri interesante. </p>
+<p> &nbsp; Iti voi explica pe scurt. Pai... este un program open-source gratuit folostit in crearea modelelor 3D, jocuri, animatii, arhitectura, CGI pentru filme, simulari si multe alte lucruri interesante. </p>
 <p> &nbsp; Unul dintre cele mai tari chestii este faptul ca iti pot aduce lucrurile din imaginatia ta la viata. </p>
 <img src="https://i.imgur.com/SHuaX7L.png">
 <p> &nbsp; <i> Ce iti pot zice de acum este faptul ca primul impact poate fi coplesitor, fiind o interfata greoaie si poate dificil de inteles la inceput, avand foarte multe tool-uri folosite in diferte scopuri, cu multe poate nefiind necesar sa interactionezi vreodata in functie de ce vrei sa faci. 
