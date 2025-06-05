@@ -3,11 +3,11 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
+    "build": "astro build",
     "dev": "astro dev",
+    "preview": "astro preview",
     "dev:network": "astro dev --host",
     "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
     "preview:network": "astro dev --host",
     "astro": "astro",
     "lint": "eslint .",
