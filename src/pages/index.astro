@@ -20,6 +20,10 @@ const projects = (await getCollection("projects"))
 
 <PageLayout title="Acasa" description={SITE.DESCRIPTION}>
 
+   <div id="transition-screen" class="transition">
+        <img id="logo" src="https://i.imgur.com/JaJA3rv.png" alt="Logo" class="logo"/>
+      </div
+
   <!-- Light Mode: Particles -->
   <div class='absolute inset-0 block dark:hidden'>
     <div id='particles1' class='fixed inset-0'></div>
@@ -68,11 +72,11 @@ const projects = (await getCollection("projects"))
             si imi place kebabul
           </p>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
-            <a href='https://eu.dumitrw.ro' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
-              Link-uri
-            </a>
-            <a href='/projects' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+            <a href='/projects' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
               Proiecte
+            </a>
+            <a href='/blog' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+              Blog
             </a>
           </div>
         </div>
@@ -93,7 +97,7 @@ const projects = (await getCollection("projects"))
               Acest website personal este mai mult decât un portofoliu – este o fereastră către viziunea și evoluția mea artistică.
                Aici vei găsi o selecție a celor mai reprezentative lucrări, fiecare povestind despre pasiunea mea.
                Îmi doresc ca această platformă să inspire și să deschidă noi oportunități de colaborare.</b></p>
-<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.37/build/spline-viewer.js"></script>
+<!--script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.37/build/spline-viewer.js"></script -->
 <!--spline-viewer url="https://prod.spline.design/9ZVHUQJ9xyhWQcON/scene.splinecode"></spline-viewer -->
         </article>
       </section>
