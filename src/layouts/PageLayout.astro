@@ -7,7 +7,6 @@ import Drawer from "@components/Drawer.astro"
 const { title, description } = Astro.props
 import { SITE } from "@consts"
 const isHomePage = new URL(Astro.request.url).pathname === "/";
-
 ---
 
 <!doctype html>
@@ -19,10 +18,6 @@ const isHomePage = new URL(Astro.request.url).pathname === "/";
     <Header />
     <Drawer />
     <main>
-      <!-- div id="transition-screen" class="transition">
-        <img id="logo" src="https://i.imgur.com/JaJA3rv.png" alt="Logo" class="logo"/>
-      </div -->
-      
       <slot />
     </main>
     <Footer />

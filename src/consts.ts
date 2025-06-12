@@ -70,9 +70,14 @@ export const SOCIALS: Socials = [
   { 
     NAME: "Github",
     ICON: "github",
-    TEXT: "markhorn-dev",
-    HREF: "https://github.com/dumitrw"
+    TEXT: "dumitrw",
+    HREF: "https://github.com/dumitrw",
   },
-
+  { 
+    NAME: "Instagram",
+    ICON: "instagram",
+    TEXT: "dumitrw.png",
+    HREF: "https://instagram.com/dumitrw.png",
+  },
 ]
 
