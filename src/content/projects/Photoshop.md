@@ -1,12 +1,17 @@
 ---
 title: "Proiecte Photoshop"
-summary: "nu"
+summary: "da"
 date: "Jan 1 1920"
 draft: false
 tags:
 - Photoshop
 ---
 
+<h3> logo Visual_Studios </h3>
+<p></p>
+<p><div class="poza"><img src="https://i.imgur.com/68vynCU.jpeg" alt="Fata meniu"> </div> </p>
+
+---
 
 <h2>SOHO Club & Lounge</h2>
 
