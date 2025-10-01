@@ -1,6 +1,6 @@
 ---
-title: "Proiecte Photoshop"
-summary: "da"
+title: "Photoshop"
+summary: "Proiecte recente realizate in Photoshop."
 date: "Jan 1 1920"
 draft: false
 tags:

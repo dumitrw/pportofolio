@@ -1,6 +1,6 @@
 ---
-title: "Proiecte Blender"
-summary: "Cateva proiecte recente realizate in Blender."
+title: "Blender"
+summary: "Proiecte recente realizate in Blender."
 date: "Dec 6 2024"
 draft: false
 tags:
